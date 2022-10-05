@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations</title>
+
+    <script
+      src="https://kit.fontawesome.com/b4848c0b03.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="reservations">
+    <header>
+      <nav>
+        <div class="links-container">
+          <i class="fa-solid fa-plane-departure"></i>
+          <a href="./index.html">Home</a>
+          <a href="./reservation.html">Reservations</a>
+        </div>
+      </nav>
+      <div class="header"><h1>Reservations</h1></div>
+    </header>
+
+    <main class="res-main-content">
+      <form action="https://httpbin.org/post">
+        <div class="column-one">
+          <div class="email-input">
+            <input type="email" placeholder="Email" required />
+          </div>
+
+          <div class="fname-input">
+            <input type="text" placeholder="First Name" required />
+          </div>
+
+          <div class="lname-input">
+            <input type="text" placeholder="Last Name" required />
+          </div>
+
+          <div class="phone-input">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+
+          <div class="travelers">
+            <label for="cars">Number of Travelers:</label>
+            <select id="number">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="column-two">
+          <div class="radio">
+            <input type="radio" id="one-way" />
+            <label for="one-way">One Way</label><br />
+          </div>
+          <div class="dates">
+            <p>Departure Date</p>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="column-three">
+          <input type="radio" id="round-trip" />
+          <label for="round-trip">Round Trip</label><br />
+
+          <div class="dates">
+            <p>Departure Date</p>
+            <input type="date" />
+            <p>Return Date</p>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="column-four">
+          <div class="check-boxes">
+            <input type="checkbox" id="personal-item" />
+            <label for="personal-item">Personl Item</label><br />
+            <input type="checkbox" id="carry-on" />
+            <label for="carry-on">Carry On</label><br />
+            <input type="checkbox" id="checked-bag" />
+            <label for="checked-bag">Checked Bag</label><br />
+          </div>
+        </div>
+
+        <div class="input-btn"><input type="submit" class="btn" /></div>
+      </form>
+    </main>
+    <footer>
+      <div>Website Powered By Kassidy Price</div>
+    </footer>
+  </body>
+</html>
